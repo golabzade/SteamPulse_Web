@@ -17,7 +17,7 @@ $TR = preg_replace("/[^0-9\.]/", '', $TRobj->lowest_price);
 // UA
 $UAjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=18&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $UAobj = json_decode($UAjson);
-$UA = preg_replace("/[^0-9\.]/", '', $UAobj->lowest_price)/100; 
+$UA = preg_replace("/[^0-9\.]/", '', $UAobj->lowest_price); 
 // RU
 $RUjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=5&market_hash_name=Mann%20Co.%20Supply%20Crate%20Key');
 $RUobj = json_decode($RUjson);
