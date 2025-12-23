@@ -17,7 +17,7 @@ $TR = preg_replace("/[^0-9\.]/", '', $TRobj->lowest_price);
 // UA
 $UAjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=18&market_hash_name=Tour%20of%20Duty%20Ticket');
 $UAobj = json_decode($UAjson);
-$UA = preg_replace("/[^0-9\.]/", '', $UAobj->lowest_price)/100; 
+$UA = preg_replace("/[^0-9\.]/", '', $UAobj->lowest_price); 
 // RU
 $RUjson = file_get_contents('https://steamcommunity.com/market/priceoverview/?appid=440&currency=5&market_hash_name=Tour%20of%20Duty%20Ticket');
 $RUobj = json_decode($RUjson);
